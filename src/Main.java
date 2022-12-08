@@ -53,6 +53,8 @@ public class Main extends Application {
         Group root = new Group(mainSceneButton(), quitButton());
         Scene scene = new Scene(root, Color.GREEN);
         PRIMARY_STAGE.setScene(scene);
+        int x = 0;
+        // adsadasd
     }
 
     public void showSettingsScene() { // ADD FUNCTIONALITY
