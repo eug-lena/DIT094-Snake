@@ -23,6 +23,7 @@ public class Main extends Application {
     public static Stage PRIMARY_STAGE;
     public static Difficulty selectedDifficulty = Difficulty.NORMAL;
     // Add such that these variables are dependant on local file.
+  
 
     public static void main(String[] args) {
         launch(args);
@@ -44,6 +45,8 @@ public class Main extends Application {
         Scene mainScene = new Scene(root);
         PRIMARY_STAGE.setScene(mainScene);
     }
+    
+
 /*
     public void showMainScene() {
         Button startGameButton = createButton("Start Game", WIDTH / 2, (int) (HEIGHT * 0.3));
