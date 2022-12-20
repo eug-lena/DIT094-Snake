@@ -72,7 +72,7 @@ public class Main extends Application {
         Scene mainScene = new Scene(root, Color.WHITE);
         PRIMARY_STAGE.setScene(mainScene);
     }
-
+*/
     public void showStartGameScene() { // ADD FUNCTIONALITY
         Button gameButton = createButton("Start Game", WIDTH / 2, (int) (HEIGHT * 0.3));
         gameButton.setOnAction(event -> {
@@ -82,7 +82,7 @@ public class Main extends Application {
         Scene startGameScene = new Scene(root, Color.GREEN);
         PRIMARY_STAGE.setScene(startGameScene);
     }
-*/
+/* 
     public void showSettingsScene() throws IOException { // ADD FUNCTIONALITY
         Parent root = FXMLLoader.load(getClass().getResource("SettingsScene.fxml"));
         Scene settingsScene = new Scene(root);
@@ -94,7 +94,7 @@ public class Main extends Application {
         Scene highScoreScene = new Scene(root, Color.YELLOW);
         PRIMARY_STAGE.setScene(highScoreScene);
     }
-
+*/
     public void showGameScene() {
         int cellcount = 20;
         int cellsize = 40;

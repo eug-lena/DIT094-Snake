@@ -1,6 +1,7 @@
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,10 +33,14 @@ public class SceneController extends Main {
     }
 
     public void switchGameScene(ActionEvent event) throws IOException {
-        showGameScene();
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        showStartGameScene();
+        //stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        //scene = new Scene(root);
+        //stage.setScene(scene);
+        //stage.show();
+    }
+
+    public void exitGameButton(ActionEvent event) throws IOException {
+        Platform.exit();
     }
 }
