@@ -45,9 +45,9 @@ public class Main extends Application {
         Scene mainScene = new Scene(root);
         PRIMARY_STAGE.setScene(mainScene);
     }
-    
 
-/*
+
+/* 
     public void showMainScene() {
         Button startGameButton = createButton("Start Game", WIDTH / 2, (int) (HEIGHT * 0.3));
         startGameButton.setOnAction(event -> {
@@ -72,7 +72,8 @@ public class Main extends Application {
         Scene mainScene = new Scene(root, Color.WHITE);
         PRIMARY_STAGE.setScene(mainScene);
     }
-*/
+
+ 
     public void showStartGameScene() { // ADD FUNCTIONALITY
         Button gameButton = createButton("Start Game", WIDTH / 2, (int) (HEIGHT * 0.3));
         gameButton.setOnAction(event -> {
@@ -82,7 +83,8 @@ public class Main extends Application {
         Scene startGameScene = new Scene(root, Color.GREEN);
         PRIMARY_STAGE.setScene(startGameScene);
     }
-/* 
+    
+
     public void showSettingsScene() throws IOException { // ADD FUNCTIONALITY
         Parent root = FXMLLoader.load(getClass().getResource("SettingsScene.fxml"));
         Scene settingsScene = new Scene(root);
@@ -105,7 +107,8 @@ public class Main extends Application {
         StackPane root = new StackPane(canvas);
         Scene gameScene = new Scene(root, gridsize, gridsize);
         PRIMARY_STAGE.setScene(gameScene);
-
+        
+        //PRIMARY_STAGE.sizeToScene();
         gameScene.setOnKeyPressed(e -> {
             if (Direction.fromKeypress(e.getCode()) != null) {
                 Direction newDirection = Direction.fromKeypress(e.getCode());
@@ -144,7 +147,7 @@ public class Main extends Application {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                System.out.println("Hello World");
+                System.out.println("RUN");
             }
         }, 0, 5000);
 
@@ -166,7 +169,7 @@ public class Main extends Application {
             }
         }.start();
     }
-
+/* 
     public Button createButton(String text, int XPos, int YPos) {
         int buttonWidth = WIDTH / 3; // Can make resolution be enums, then have this based on that.
         int buttonHeight = HEIGHT / 10;
@@ -181,15 +184,11 @@ public class Main extends Application {
     public Button mainSceneButton() {
         Button mainSceneButton = createButton("Go back to main scene", WIDTH / 6, HEIGHT - HEIGHT / 10);
         mainSceneButton.setOnAction(event -> {
-            try {
-                showMainScene();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            showMainScene();
         });
         return mainSceneButton;
     }
+    
 
     public Button quitButton() {
         Button quitButton = createButton("Exit program", WIDTH - WIDTH / 6, HEIGHT - HEIGHT / 10);
@@ -199,4 +198,5 @@ public class Main extends Application {
         quitButton.setStyle("-fx-background-color: #ff8080; ");
         return quitButton;
     }
+    */
 }

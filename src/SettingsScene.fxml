@@ -12,15 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
    <children>
-      <Slider layoutX="141.0" layoutY="578.0" majorTickUnit="10.0" minorTickCount="0" prefHeight="24.0" prefWidth="511.0" showTickMarks="true" snapToTicks="true">
-         <effect>
-            <Shadow blurType="ONE_PASS_BOX" height="0.0" radius="4.75">
-               <color>
-                  <Color red="0.3955930173397064" green="0.6499999761581421" blue="0.29899999499320984" />
-               </color>
-            </Shadow>
-         </effect>
-      </Slider>
+      <Slider layoutX="141.0" layoutY="578.0" majorTickUnit="1.0" max="11.0" min="1.0" minorTickCount="0" prefHeight="24.0" prefWidth="511.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
       <CheckBox layoutX="143.0" layoutY="270.0" mnemonicParsing="false" selected="true" text="Sound Effects">
          <font>
             <Font name="System Bold Italic" size="17.0" />
@@ -74,17 +66,17 @@
             </Shadow>
          </effect>
       </Slider>
-      <Text layoutX="133.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy">
+      <Text layoutX="129.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="372.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal">
+      <Text layoutX="371.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="625.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insane">
+      <Text layoutX="623.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insane">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
