@@ -34,6 +34,16 @@ public class Main extends Application  {
     public static int HEIGHT = 800;
     public static Stage PRIMARY_STAGE;
     public static Difficulty selectedDifficulty = Difficulty.NORMAL;
+    
+    //Not sure weather to keep this viariables in the Snake class and call them or initialize them down below
+    int snake_length = 6;                             //initially set blocks for snake body
+    int foodEaten = 0;                                //food items eaten by snake initially set to 0
+    int snakeFoodX;                                   //x value for snake's food
+    int snakeFoodY;                                   //y value for snake's food
+    char dir = 'R';                                   //declaring a variable dir for giving our snake direction that is first set to 'R' means our snake initially starts moving to right direction
+    boolean running = false;                         //a boolean value for checking condition of our game initially set to false
+    Timer timer;                                     //a timer variable from Timer class helps in moving speed of our snake created below by william
+    Random random;  
 
     // Add such that these variables are dependant on local file.
 
