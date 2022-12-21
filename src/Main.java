@@ -88,15 +88,25 @@ public class Main extends Application  {
         }
     }*/
 
+    public void newFood() {
+        /*
+            int snakeFoodX;                             //x value for snake's food
+            int snakeFoodY;                             //y value for snake's food
+    
+        snakeFoodX = random.nextInt((PRIMARY_STAGE.setWidth(WIDTH);/ cellsize)) * UNIT_SIZE; //here it takes x-axis for creating new food for snake through random function
+        snakeFoodY = random.nextInt((PRIMARY_STAGE.setHeight(HEIGHT); / cellsize)) * UNIT_SIZE; //here it takes y-axis
+        */
+    }
+   
+   
+   
     public void showStartGameScene() { 
-        
-        
         
         /*//startGame class first run newFood class
 
         newFood();
         running = true; //sets running to true as through running we define the condition of our game
-        timer = new Timer(DELAY, this); //Timer is a swing class that takes DELAY as parameter and a listener
+        timer = new Timer(DELAY, this); 
         timer.start(); //starts the timer that we create from Timer class 
         */
     
