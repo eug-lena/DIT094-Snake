@@ -86,8 +86,29 @@ public class Main extends Application  {
     public void draw(Graphics g) {
     /* 
         if (running) { 
+
+
             g.setColor(Color.GREEN); //setColor method gave our g Graphics an colour
             g.fillOval(snakeFoodX, snakeFoodY, cellsize, cellsize);
+
+           // for the snake body
+            for (int i = 0; i < snake_length; i++) 
+            {
+                // here i gave my snake's head a different colour from body
+                if (i == 0) {
+                    g.setColor(Color.red); //setting color to red
+
+                } else {
+                    // in next if else block i give two colour to our snake
+                    if (i % 2 == 0) {
+                        g.setColor(Color.black); //for even blocks of snake's body set black colour
+                    } else {
+                        g.setColor(Color.black); //else provide white colour to the remaining body
+                    }
+
+                }
+                g.fillOval(x[i], y[i], cellsize, cellsixe); //and give oval shape
+            }
             g.setColor(Color.GREEN); //set colour green
             g.setFont(new Font("Serif", Font.ITALIC, 40)); //setFont method in awt.Graphics class pass a parameter where we declare a new font ("String Font Name",Font.type,int value for size of font)
             FontMetrics metrics = getFontMetrics(g.getFont()); //FontMetrices clas inside awt package is used to encapsulate a given font and here we declare "metrics" as FontMetrices and then get font we gave to g Graphics
@@ -239,6 +260,7 @@ public class Main extends Application  {
     }
 
     public Button quitButton() {
+        
         Button quitButton = createButton("Exit program", WIDTH - WIDTH / 6, HEIGHT - HEIGHT / 10);
         quitButton.setOnAction(event -> {
             Platform.exit();
