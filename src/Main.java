@@ -155,7 +155,13 @@ public class Main extends Application  {
         }*/
 
     }
-   
+    public void checkFood() {/* 
+        if ((x[0] == snakeFoodX) && (y[0] == snakeFoodY)) { //here as x and y array includes the dimensins of our snake therefore if dimension of head of our snake is equal to the position of food then it must eat it
+            snake_length++; //now as our snake eat it's food then we increase snake's length by 1
+            foodEaten++; // and also increase the value of food eaten by our snake to one  that will help further in showing score
+            newFood(); //and then a call for newFood that will help in generation of newFood for our snake
+        } */
+    }
    
     public void showStartGameScene() 
     { 
