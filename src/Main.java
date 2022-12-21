@@ -163,6 +163,37 @@ public class Main extends Application  {
         } */
     }
    
+
+    public void checkCollisions() {/* 
+        //checks if head collides with body
+        for (int i = snake_length; i > 0; i--) {
+            if ((x[0] == x[i]) && (y[0] == y[i])) {
+                running = false;
+                break;
+            }
+        }
+        //check if head touches left border
+        if (x[0] < 0) {
+            running = false;
+        }
+        //check if head touches right border
+        if (x[0] >  PRIMARY_STAGE.setWidth(WIDTH)) {
+            running = false;
+        }
+        //check if head touches top border
+        if (y[0] < 0) {
+            running = false;
+        }
+        //check if head touches bottom border
+        if (y[0] >  PRIMARY_STAGE.setHeight(HEIGHT)) {
+            running = false;
+        }
+
+        if (!running) { //check if running is not true then stop timer
+            timer.stop();
+        }
+        */
+    }
     public void showStartGameScene() 
     { 
         
