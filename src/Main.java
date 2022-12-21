@@ -43,7 +43,7 @@ public class Main extends Application  {
     char dir = 'R';                                   //declaring a variable dir for giving our snake direction that is first set to 'R' means our snake initially starts moving to right direction
     boolean running = false;                         //a boolean value for checking condition of our game initially set to false
     Timer timer;                                     //a timer variable from Timer class helps in moving speed of our snake created below by william
-    Random random;  
+    Random random;                                   //a random variable from Random function helps in giving the random location for our snake's food
 
     // Add such that these variables are dependant on local file.
 
@@ -60,6 +60,8 @@ public class Main extends Application  {
         PRIMARY_STAGE.setResizable(false);
         showMainScene();
         PRIMARY_STAGE.show();
+        PRIMARY_STAGE.pack(); //pack our every component and layouts in minimum space
+        PRIMARY_STAGE.setLocationRelativeTo(null); //sets the location of our panel on window
     }
 
     public void showMainScene() {
@@ -100,9 +102,6 @@ public class Main extends Application  {
 
     public void newFood() {
         /*
-            int snakeFoodX;                             //x value for snake's food
-            int snakeFoodY;                             //y value for snake's food
-    
         snakeFoodX = random.nextInt((PRIMARY_STAGE.setWidth(WIDTH);/ cellsize)) * UNIT_SIZE; //here it takes x-axis for creating new food for snake through random function
         snakeFoodY = random.nextInt((PRIMARY_STAGE.setHeight(HEIGHT); / cellsize)) * UNIT_SIZE; //here it takes y-axis
         */
