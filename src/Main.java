@@ -1,10 +1,21 @@
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -12,6 +23,10 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import java.util.Random;
 
 public class Main extends Application {
 
