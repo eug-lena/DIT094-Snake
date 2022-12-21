@@ -218,6 +218,21 @@ public class Main extends Application  {
                 }
             }
         });
+        
+        /*public void gameOver(Graphics g) {
+        //Score display
+        g.setColor(Color.red); //red color for our font graphics
+        g.setFont(new Font("Serif", Font.BOLD, 40));
+        FontMetrics metrics1 = getFontMetrics(g.getFont()); //again declaring a fontMetrics names as metrics1
+        g.drawString("Score: " + foodEaten, (PRIMARY_STAGE.setWidth(WIDTH); - metrics1.stringWidth("Score: " + foodEaten)) / 2, g.getFont().getSize());
+
+        //Game Over display
+        g.setColor(Color.red);
+        g.setFont(new Font("Serif", Font.BOLD, 75));
+        FontMetrics metrics2 = getFontMetrics(g.getFont());
+        g.drawString("Game Over", (PRIMARY_STAGE.setWidth(WIDTH);- metrics2.stringWidth("Game Over")) / 2, SCREEN_HEIGHT / 2);
+    
+        } */
 
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
@@ -260,7 +275,6 @@ public class Main extends Application  {
     }
 
     public Button quitButton() {
-        
         Button quitButton = createButton("Exit program", WIDTH - WIDTH / 6, HEIGHT - HEIGHT / 10);
         quitButton.setOnAction(event -> {
             Platform.exit();
