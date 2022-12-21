@@ -28,12 +28,13 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.util.Random;
 
-public class Main extends Application {
+public class Main extends Application  {
 
     public static int WIDTH = 800;
     public static int HEIGHT = 800;
     public static Stage PRIMARY_STAGE;
     public static Difficulty selectedDifficulty = Difficulty.NORMAL;
+
     // Add such that these variables are dependant on local file.
 
     public static void main(String[] args) {
@@ -41,7 +42,7 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) throws Exception  {
         PRIMARY_STAGE = primaryStage;
         PRIMARY_STAGE.setHeight(HEIGHT);
         PRIMARY_STAGE.setWidth(WIDTH);
@@ -72,7 +73,22 @@ public class Main extends Application {
         PRIMARY_STAGE.setScene(mainScene);
     }
 
-    public void showStartGameScene() { // ADD FUNCTIONALITY
+   /*  public void draw(Graphics g) {
+
+        if (running) { 
+            g.setColor(Color.GREEN); //setColor method gave our g Graphics an colour
+            g.fillOval(snakeFoodX, snakeFoodY, cellsize, cellsize);
+            g.setColor(Color.GREEN); //set colour green
+            g.setFont(new Font("Serif", Font.ITALIC, 40)); //setFont method in awt.Graphics class pass a parameter where we declare a new font ("String Font Name",Font.type,int value for size of font)
+            FontMetrics metrics = getFontMetrics(g.getFont()); //FontMetrices clas inside awt package is used to encapsulate a given font and here we declare "metrics" as FontMetrices and then get font we gave to g Graphics
+            g.drawString("Score: " + foodEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + foodEaten)) / 2, g.getFont().getSize()); //drawString method draw the String on our panel by taking the following parameters("String that we want to draw ",x-length,y-length)
+    
+        } else {
+            gameOver(g); //else if running is false then we go to the gameOver function with parameter g
+        }
+    }*/
+
+     public void showStartGameScene() { // ADD FUNCTIONALITY
         Button gameButton = createButton("Start Game", WIDTH / 2, (int) (HEIGHT * 0.3));
         gameButton.setOnAction(event -> {
             showGameScene();
@@ -87,8 +103,8 @@ public class Main extends Application {
         Scene settingsScene = new Scene(root, Color.BLUE);
         PRIMARY_STAGE.setScene(settingsScene);
     }
-
-    public void showHighScoreScene() { // ADD FUNCTIONALITY
+   
+    public void showHighScoreScene() { // ADD FUNCTIONALITY 
         Group root = new Group(mainSceneButton(), quitButton());
         Scene highScoreScene = new Scene(root, Color.YELLOW);
         PRIMARY_STAGE.setScene(highScoreScene);
