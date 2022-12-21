@@ -131,9 +131,34 @@ public class Main extends Application  {
         */
     }
    
+    //this function now make our snake move
+    public void move() {/* 
+        for (int i = snake_length; i > 0; i--) { //starting from snake length it continously dec. the values of x and y axis which are arrays where we store the length of snake
+            x[i] = x[i - 1];
+            y[i] = y[i - 1];
+        }
+
+        //switching direction for our snake's movement when we press keys
+        switch (dir) {
+            case 'U':
+                y[0] = y[0] - cellsize; //denote 'U' for Upper direction as decrease y-axis value by one which helps our snake to move in above y-axis
+                break;
+            case 'D':
+                y[0] = y[0] + cellsize;
+                break;
+            case 'L':
+                x[0] = x[0] -  cellsize;
+                break;
+            case 'R':
+                x[0] = x[0] + cellsize;
+                break;
+        }*/
+
+    }
    
    
-    public void showStartGameScene() { 
+    public void showStartGameScene() 
+    { 
         
         /*//startGame class first run newFood class
 
