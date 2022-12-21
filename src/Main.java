@@ -88,7 +88,19 @@ public class Main extends Application  {
         }
     }*/
 
-     public void showStartGameScene() { // ADD FUNCTIONALITY
+    public void showStartGameScene() { 
+        
+        
+        
+        /*//startGame class first run newFood class
+
+        newFood();
+        running = true; //sets running to true as through running we define the condition of our game
+        timer = new Timer(DELAY, this); //Timer is a swing class that takes DELAY as parameter and a listener
+        timer.start(); //starts the timer that we create from Timer class 
+        */
+    
+        // ADD FUNCTIONALITY
         Button gameButton = createButton("Start Game", WIDTH / 2, (int) (HEIGHT * 0.3));
         gameButton.setOnAction(event -> {
             showGameScene();
