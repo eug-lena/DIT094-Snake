@@ -60,8 +60,6 @@ public class Main extends Application  {
         PRIMARY_STAGE.setResizable(false);
         showMainScene();
         PRIMARY_STAGE.show();
-        PRIMARY_STAGE.pack(); //pack our every component and layouts in minimum space
-        PRIMARY_STAGE.setLocationRelativeTo(null); //sets the location of our panel on window
     }
 
     public void showMainScene() {
@@ -85,8 +83,8 @@ public class Main extends Application  {
         PRIMARY_STAGE.setScene(mainScene);
     }
 
-   /*  public void draw(Graphics g) {
-
+    public void draw(Graphics g) {
+    /* 
         if (running) { 
             g.setColor(Color.GREEN); //setColor method gave our g Graphics an colour
             g.fillOval(snakeFoodX, snakeFoodY, cellsize, cellsize);
@@ -97,8 +95,13 @@ public class Main extends Application  {
     
         } else {
             gameOver(g); //else if running is false then we go to the gameOver function with parameter g
-        }
-    }*/
+        }*/
+    }
+
+    public void paintComponent(Graphics g) { 
+        /*super.paintComponent(g); //create the paintComponent class in which we inherit the method name paintComponent with the help of super keyword nd which perform its function with the help of graphic g that we create and passed in it
+        draw(g); //call draw method*/
+    }
 
     public void newFood() {
         /*
@@ -118,6 +121,8 @@ public class Main extends Application  {
         timer = new Timer(DELAY, this); 
         timer.start(); //starts the timer that we create from Timer class 
         */
+
+
     
         // ADD FUNCTIONALITY
         Button gameButton = createButton("Start Game", WIDTH / 2, (int) (HEIGHT * 0.3));
@@ -153,6 +158,8 @@ public class Main extends Application  {
         root.getChildren().add(canvas);
         Scene gameScene = new Scene(root, gridsize, gridsize);
         PRIMARY_STAGE.setScene(gameScene);
+
+
 
         gameScene.setOnKeyPressed(e -> {
             if (Keybind.fromKeypress(e.getCode()) != null) {

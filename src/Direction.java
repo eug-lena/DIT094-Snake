@@ -14,3 +14,4 @@ public enum Direction {
         return this.keybind;
     }
 }
+
