@@ -29,6 +29,7 @@ public class Main extends Application {
         stage.setScene(mainScene);
         stage.show();
     }
+    //System.out.println,
 
     /*
      * public void showHighScoreScene() { // ADD FUNCTIONALITY
