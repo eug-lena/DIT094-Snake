@@ -18,11 +18,11 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="534.0" layoutY="268.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="233.0" layoutX="150.0" layoutY="518.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="255.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
-      <Slider layoutX="150.0" layoutY="405.0" majorTickUnit="10.0" minorTickCount="0" prefHeight="20.0" prefWidth="500.0" showTickMarks="true" snapToTicks="true">
+      <Slider fx:id="difficultySlider" blockIncrement="1.0" layoutX="150.0" layoutY="405.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" onMouseReleased="#setDifficultyLevel" prefHeight="20.0" prefWidth="500.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0">
          <effect>
-            <Shadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0">
+            <Shadow blurType="ONE_PASS_BOX" height="1.0" radius="0.0" width="0.0">
                <color>
-                  <Color red="0.3955930173397064" green="0.6499999761581421" blue="0.29899999499320984" />
+                  <Color red="0.3960784375667572" green="0.6509804129600525" blue="0.2980392277240753" />
                </color>
             </Shadow>
          </effect>
@@ -74,7 +74,7 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Text>
-      <Slider layoutX="150.0" layoutY="128.0" prefHeight="20.0" prefWidth="500.0" snapToTicks="true">
+      <Slider fx:id="musicSlider" layoutX="150.0" layoutY="128.0" prefHeight="20.0" prefWidth="500.0" snapToTicks="true">
          <effect>
             <Shadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0">
                <color>
@@ -86,11 +86,11 @@
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor>
       </Slider>
-      <Slider layoutX="150.0" layoutY="210.0" prefHeight="20.0" prefWidth="500.0" snapToTicks="true">
+      <Slider fx:id="fxSlider" layoutX="150.0" layoutY="210.0" prefHeight="20.0" prefWidth="500.0" snapToTicks="true">
          <effect>
-            <Shadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0">
+            <Shadow blurType="ONE_PASS_BOX" height="1.0" radius="0.0" width="0.0">
                <color>
-                  <Color red="0.3955930173397064" green="0.6499999761581421" blue="0.29899999499320984" />
+                  <Color red="0.3960784375667572" green="0.6509804129600525" blue="0.2980392277240753" />
                </color>
             </Shadow>
          </effect>
@@ -98,17 +98,17 @@
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor>
       </Slider>
-      <Text fill="WHITE" layoutX="150.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy">
+      <Text fill="WHITE" layoutX="150.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="375.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal">
+      <Text fill="WHITE" layoutX="375.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="607.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insane">
+      <Text fill="WHITE" layoutX="606.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insane">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>

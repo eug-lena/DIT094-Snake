@@ -1,3 +1,5 @@
+package GameLogic;
+
 import javafx.scene.input.KeyCode;
 
 public enum Keybind {
@@ -29,4 +31,6 @@ public enum Keybind {
         }
         return null;
     }
+    // Used to see if a key that has been pressed should have an action.
+    // If the pressed key is not supposed to have an action it returns null.
 }

@@ -22,5 +22,4 @@
 hs_err_pid*
 
 # folders
-/.vscode/
-/bin/
+/.vscode/launch.json

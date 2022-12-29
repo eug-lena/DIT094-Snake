@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scenes.SettingsScene">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="534.0" layoutY="268.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="233.0" layoutX="150.0" layoutY="518.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="255.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <CheckBox layoutX="150.0" layoutY="179.0" mnemonicParsing="false" selected="true" text="Sound Effects" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox layoutX="150.0" layoutY="94.0" mnemonicParsing="false" selected="true" text="Music" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Text fill="WHITE" layoutX="355.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Music volume">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="352.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effects volume">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="358.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audio">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="298.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Settings">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Slider fx:id="musicSlider" layoutX="150.0" layoutY="128.0" prefHeight="20.0" prefWidth="500.0" snapToTicks="true">
+         <effect>
+            <Shadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.3955930173397064" green="0.6499999761581421" blue="0.29899999499320984" />
+               </color>
+            </Shadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Slider fx:id="fxSlider" layoutX="150.0" layoutY="210.0" prefHeight="20.0" prefWidth="500.0" snapToTicks="true">
+         <effect>
+            <Shadow blurType="ONE_PASS_BOX" height="1.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.3960784375667572" green="0.6509804129600525" blue="0.2980392277240753" />
+               </color>
+            </Shadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Slider>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="31.0" prefWidth="90.0" text="Back" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" layoutX="312.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keybindings">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="258.0" layoutY="589.0" prefHeight="31.0" prefWidth="61.0" promptText="Enter key">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <Text fill="#7bff39" layoutX="150.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURN UP">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#7bff39" layoutX="150.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURN LEFT">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#7bff39" layoutX="150.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURN DOWN">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#7bff39" layoutX="150.0" layoutY="730.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURN RIGHT">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#7bff39" layoutX="480.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAUSE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="258.0" layoutY="629.0" prefHeight="31.0" prefWidth="61.0" promptText="Enter key">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <TextArea layoutX="258.0" layoutY="669.0" prefHeight="31.0" prefWidth="61.0" promptText="Enter key">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <TextArea layoutX="258.0" layoutY="709.0" prefHeight="31.0" prefWidth="61.0" promptText="Enter key">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <TextArea layoutX="545.0" layoutY="589.0" prefHeight="31.0" prefWidth="61.0" promptText="Enter key">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <Text fill="#fcfcfc" layoutX="326.0" layoutY="609.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default &quot;W&quot;)">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="326.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default &quot;A&quot;)">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="327.0" layoutY="689.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default &quot;S&quot;)">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="328.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default &quot;D&quot;)">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="545.0" layoutY="638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default &quot;P&quot;)">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Button fx:id="easyDifficulty" layoutX="50.0" layoutY="392.0" mnemonicParsing="false" onAction="#switchToEasyDifficulty" prefHeight="100.0" prefWidth="200.0" text="Easy">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="normalDifficulty" layoutX="300.0" layoutY="392.0" mnemonicParsing="false" onAction="#switchToNormalDifficulty" prefHeight="100.0" prefWidth="200.0" text="Normal">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="hardDifficulty" layoutX="550.0" layoutY="392.0" mnemonicParsing="false" onAction="#switchToHardDifficulty" prefHeight="100.0" prefWidth="200.0" text="Hard">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" layoutX="344.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose difficulty">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+</AnchorPane>
